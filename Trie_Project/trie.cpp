@@ -4,7 +4,7 @@
 #include <fstream>
 
 /**
- * @brief Initializes the Trie by creating a new root node and setting all children pointers to nullptr.
+ * brief Initializes the Trie by creating a new root node and setting all children pointers to nullptr.
  */
 void Trie::init()
 {
@@ -16,9 +16,9 @@ void Trie::init()
 }
 
 /**
- * @brief Inserts a word into the trie.
+ * brief Inserts a word into the trie.
  *
- * @param word The word to be inserted.
+ * param word The word to be inserted.
  */
 void Trie::insert(std::string word)
 {
@@ -37,10 +37,10 @@ void Trie::insert(std::string word)
 }
 
 /**
- * @brief Searches for a given key in the Trie.
+ * brief Searches for a given key in the Trie.
  *
- * @param key The key to search for.
- * @return true if the key is found in the Trie, false otherwise.
+ * param key The key to search for.
+ * return true if the key is found in the Trie, false otherwise.
  */
 bool Trie::search(std::string key)
 {
@@ -58,9 +58,9 @@ bool Trie::search(std::string key)
 }
 
 /**
- * @brief Performs a depth-first search on the Trie and prints all valid words.
+ * brief Performs a depth-first search on the Trie and prints all valid words.
  *
- * @param node The current node in the Trie.
+ * param node The current node in the Trie.
  */
 void Trie::dfs_print(TrieNode* node)
 {
@@ -79,9 +79,9 @@ void Trie::dfs_print(TrieNode* node)
 }
 
 /**
- * @brief Finds all keys in the Trie that have the given prefix.
+ * brief Finds all keys in the Trie that have the given prefix.
  *
- * @param prefix The prefix to search for.
+ * param prefix The prefix to search for.
  */
 void Trie::findPrefix(std::string prefix)
 {
@@ -100,9 +100,9 @@ void Trie::findPrefix(std::string prefix)
 }
 
 /**
- * @brief Finds the longest prefix of a given key in the Trie.
+ * brief Finds the longest prefix of a given key in the Trie.
  *
- * @param key The key to find the longest prefix for.
+ * param key The key to find the longest prefix for.
  */
 void Trie::longestPrefix(std::string key)
 {
@@ -122,10 +122,10 @@ void Trie::longestPrefix(std::string key)
 }
 
 /**
- * @brief Counts the number of non-null child nodes of a given TrieNode.
+ * brief Counts the number of non-null child nodes of a given TrieNode.
  *
- * @param node The TrieNode for which to count the child nodes.
- * @return The number of non-null child nodes.
+ * param node The TrieNode for which to count the child nodes.
+ * return The number of non-null child nodes.
  */
 int Trie::countChild(TrieNode* node)
 {
@@ -141,12 +141,12 @@ int Trie::countChild(TrieNode* node)
 }
 
 /**
- * @brief Deletes a word from the Trie.
+ * brief Deletes a word from the Trie.
  *
  * This function deletes the specified word from the Trie data structure.
  * If the word is not found in the Trie, it prints a message indicating that the word was not found.
  *
- * @param key The word to be deleted from the Trie.
+ * param key The word to be deleted from the Trie.
  */
 void Trie::deleteWord(std::string key)
 {
@@ -180,9 +180,9 @@ void Trie::deleteWord(std::string key)
 }
 
 /**
- * @brief Builds a trie tree from a list of words in a file.
+ * brief Builds a trie tree from a list of words in a file.
  *
- * @param path The path to the file containing the list of words.
+ * param path The path to the file containing the list of words.
  */
 void Trie::buildTreeFromList(std::string path)
 {
@@ -196,9 +196,9 @@ void Trie::buildTreeFromList(std::string path)
 }
 
 /**
- * @brief Clears the trie by deleting all nodes and setting the root to nullptr.
+ * brief Clears the trie by deleting all nodes and setting the root to nullptr.
  *
- * @param root The root node of the trie.
+ * param root The root node of the trie.
  */
 void Trie::clear(TrieNode*& root)
 {
@@ -214,12 +214,12 @@ void Trie::clear(TrieNode*& root)
 }
 
 /**
- * @brief Performs a depth-first search on the Trie to find all valid words based on character counts.
+ * brief Performs a depth-first search on the Trie to find all valid words based on character counts.
  *
- * @param node The current node in the Trie.
- * @param cnt A vector representing the count of each character in the alphabet.
- * @param index The index of the current character in the alphabet.
- * @param res A vector to store the valid words found during the search.
+ * param node The current node in the Trie.
+ * param cnt A vector representing the count of each character in the alphabet.
+ * param index The index of the current character in the alphabet.
+ * param res A vector to store the valid words found during the search.
  */
 void Trie::dfs(TrieNode* node, std::vector<int>& cnt, int index, std::vector<std::string>& res)
 {
@@ -246,10 +246,10 @@ void Trie::dfs(TrieNode* node, std::vector<int>& cnt, int index, std::vector<std
 }
 
 /**
- * @brief Solves the problem of finding all valid words made from a list of characters.
+ * brief Solves the problem of finding all valid words made from a list of characters.
  *
- * @param inputPath The path to the input file.
- * @param outputPath The path to the output file.
+ * param inputPath The path to the input file.
+ * param outputPath The path to the output file.
  */
 void Trie::solve(std::string inputPath, std::string outputPath)
 {
